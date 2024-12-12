@@ -5,9 +5,6 @@ function LandingPage() {
             <div className="land-page h-dvh w-dvh flex">
                 <div className="z-10 h-full w-full p-4 flex flex-col justify-">
                     <span className="flex flex-col mt-24 ml-14 cursor-default">
-                        {/* <span className="ml-1 text-lg font-semibold text-white">
-                            My 1<sup>st</sup>
-                        </span> */}
                         <span className="-mt-3 text-8xl font-bold ">React App</span>
                     </span>
                     <span className="ml-16">Built with Reactjs + Tailwindcss</span>

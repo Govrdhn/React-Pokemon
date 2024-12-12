@@ -1,5 +1,0 @@
-.pokemon-card {
-    display: grid;
-    grid-template-columns: repeat(1fr, 2);
-    grid-template-rows: repeat(1fr, 8);
-}
