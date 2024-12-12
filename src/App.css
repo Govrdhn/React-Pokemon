@@ -1,0 +1,35 @@
+.land-page {
+    
+  &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url('./assets/react.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+      opacity: .5;
+      top: -17rem;
+      left: -16rem;
+      animation: reactlogo 100s ease-in-out infinite;
+      transform-origin: center;
+  }
+
+  &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: .5;
+      background-color: black;
+      z-index: 1;
+  }
+
+}
+
+@keyframes reactlogo {
+  100% {
+      transform: rotate(360deg);
+  }
+}
