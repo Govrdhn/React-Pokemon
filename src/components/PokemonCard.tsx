@@ -1,6 +1,6 @@
 import '../stylings/PokemonCard.css'
 
-export const PokemonCard = ({ pokemon }) => {
+export const PokemonCard = ({pokemon}: any) => {
     return (
         <>
             <div className="flex flex-col grow p-2 w-fit bg-white border-second-800
