@@ -35,18 +35,20 @@ function PokemonList() {
         fetchPokemon();
     }, []);
 
-    const filteredCards = pokemonData.filter((curPokemon: any) => curPokemon.name.toLowerCase().includes(searchInput.toLowerCase()) )
+    const filteredCards = pokemonData.filter((curPokemon: any) => curPokemon.name.toLowerCase().includes(searchInput.toLowerCase()))
 
     if (loading) {
-        return <div>loading..</div>
+        return (
+            <div className="h-dvh w-full flex justify-center items-center">Loading..</div>
+        );
     }
 
     return (
         <>
-            <div className="flex flex-col gap-2 items-center">
-                <header className="p-4 flex justify-center items-center font-semibold text-2xl">Pokemon List</header>
-                <div className="mb-3 border-2 border-emerald-600 bg-emerald-600 rounded-md flex">
-                    <input value={searchInput} onChange={(e)=> setSeatchInput(e.target.value)} type="text" placeholder="Search your Pokemon" className="bg-white grow p-1 px-3 rounded-md outline-none" />
+            <div className="flex flex-col p-2 items-center">
+                <header className="flex justify-center items-center font-semibold text-2xl py-4">Pokemon List</header>
+                <div className="border-2 my-4 border-emerald-600 bg-emerald-600 rounded-md flex">
+                    <input value={searchInput} onChange={(e) => setSeatchInput(e.target.value)} type="text" placeholder="Search your Pokemon" className="bg-white grow p-1 px-3 rounded-md outline-none" />
                     <div className="flex items-center justify-center p-1.5 text-white">
                         <svg width="17" height="17" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -55,7 +57,7 @@ function PokemonList() {
                         </svg>
                     </div>
                 </div>
-                <div className="flex flex-wrap grid-cols-5 gap-2 grow px-2">
+                <div className="flex justify-center flex-wrap gap-2">
                     {
                         filteredCards.map((curpokemon: any) => {
                             console.log(curpokemon)

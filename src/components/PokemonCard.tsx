@@ -1,11 +1,11 @@
 import '../stylings/PokemonCard.css'
 
-export const PokemonCard = ({pokemon}: any) => {
+export const PokemonCard = ({ pokemon }: any) => {
     return (
         <>
-            <div className="flex flex-col grow p-2 w-fit bg-white border-second-800
+            <div className="flex flex-col  p-2 w-fit bg-white border-second-800
                  rounded-md content-start justify-center">
-                <img className="rounded-md col-span-2 w-56 h-full object-cover" src={pokemon.sprites.front_default} alt="no imge found" />
+                <img className="rounded-md col-span-2 w-56 h-64 object-contain p-8" src={pokemon.sprites.other.dream_world.front_default} alt="no imge found" />
                 <div className='grid  bg-emerald-50 rounded-md'>
                     <span className="col-span-2 text-black capitalize font-semibold text-center bg-emerald-400 rounded-md">{pokemon.name}</span>
                     <div className="text-xs py-1.5 px-0.5 flex flex-col items-center">
