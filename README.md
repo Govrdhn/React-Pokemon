@@ -4,7 +4,6 @@ My 'Getting started with' App for React Js,
 built with :
 
 - React
-- Vite
 - Typescript
 - Tailwindcss
 
